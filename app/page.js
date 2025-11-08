@@ -1,7 +1,6 @@
 export default function Home() {
   return (
     <main className="min-h-screen flex flex-col font-sans">
-      {/* Navigation Bar */}
       <nav className="flex justify-between items-center px-8 py-4 bg-white shadow-md sticky top-0 z-50">
         <div className="text-2xl font-serif text-teal tracking-wide">
           ORIELLE HEALTH SERVICES
@@ -21,13 +20,11 @@ export default function Home() {
         </a>
       </nav>
 
-      {/* Hero Section */}
       <section
         id="home"
         className="relative flex flex-col items-center justify-center text-center py-40 px-6 overflow-hidden"
       >
         <div className="absolute inset-0 bg-gradient-to-br from-turquoise via-white to-teal opacity-95" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.3),transparent_60%)]" />
         <div className="relative z-10 max-w-3xl">
           <h1 className="text-5xl md:text-6xl font-serif text-white drop-shadow-md mb-6">
             Clinician-led on-site wound care, clinical and nursing care
@@ -46,12 +43,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services Section */}
       <section id="services" className="py-24 bg-ivory text-center">
         <h2 className="text-4xl font-serif mb-14 text-teal">Our Services</h2>
 
         <div className="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto px-6">
-          {/* Wound & Clinical Care */}
           <div className="bg-white rounded-2xl shadow-lg p-10 text-left hover:shadow-xl transition">
             <h3 className="text-2xl font-serif mb-6 text-gold border-b pb-2">
               Wound & Clinical Care Services
@@ -68,7 +63,6 @@ export default function Home() {
             </ul>
           </div>
 
-          {/* Home Nursing Services */}
           <div className="bg-white rounded-2xl shadow-lg p-10 text-left hover:shadow-xl transition">
             <h3 className="text-2xl font-serif mb-6 text-gold border-b pb-2">
               Home Nursing Services
@@ -83,7 +77,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact Section */}
       <section
         id="contact"
         className="py-20 text-center bg-gradient-to-br from-teal via-turquoise to-teal text-white"
@@ -112,7 +105,6 @@ export default function Home() {
         </p>
       </section>
 
-      {/* Footer */}
       <footer className="py-6 bg-white text-center text-sm text-teal border-t">
         © {new Date().getFullYear()} Orielle Health Services. All rights reserved.
       </footer>
