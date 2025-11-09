@@ -12,7 +12,7 @@ export default function Home() {
           <a href="#contact" className="hover:text-gold">Contact</a>
         </div>
         <a
-          href="https://wa.me/60172740741"
+          href="https://wa.me/60122740741"
           target="_blank"
           className="bg-gold text-white px-4 py-2 rounded-lg shadow-md hover:shadow-lg hover:opacity-90 transition"
         >
