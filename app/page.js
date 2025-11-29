@@ -1,29 +1,36 @@
 export default function Home() {
   return (
     <main className="min-h-screen flex flex-col font-sans">
-      <nav className="flex justify-between items-center px-8 py-4 bg-white shadow-md sticky top-0 z-50">
-        <div className="flex justify-center items-center h-20 md:h-24 mb-4">
-          <img
-            src="/logo.png"
-            alt="Orielle Health Services Logo"
-            className="max-h-full w-auto"
-          />
-        </div>
-        <div className="space-x-8 text-teal font-medium">
-          <a href="#home" className="hover:text-gold">Home</a>
-          <a href="#services" className="hover:text-gold">Services</a>
-          <a href="#about" className="hover:text-gold">About</a>
-          <a href="#contact" className="hover:text-gold">Contact</a>
-        </div>
-        <a
-          href="https://wa.me/60122740741"
-          target="_blank"
-          className="bg-gold text-white px-4 py-2 rounded-lg shadow-md hover:shadow-lg hover:opacity-90 transition"
-        >
-          WhatsApp Us
-        </a>
-      </nav>
+      <nav className="sticky top-0 z-50 bg-white shadow-md">
+  <div className="flex flex-wrap items-center justify-between gap-3 px-4 py-3 md:px-8">
+    {/* Brand */}
+    <div className="text-lg md:text-2xl font-serif text-teal tracking-wide">
+      ORIELLE HEALTH SERVICES
+    </div>
 
+    {/* Menu links */}
+    <div className="flex flex-wrap justify-center gap-3 md:gap-8 text-sm md:text-base text-teal font-medium">
+      <a href="#home" className="hover:text-gold">
+        Home
+      </a>
+      <a href="#services" className="hover:text-gold">
+        Services
+      </a>
+      <a href="#contact" className="hover:text-gold">
+        Contact
+      </a>
+    </div>
+
+    {/* WhatsApp button */}
+    <a
+      href="https://wa.me/60122740741"
+      target="_blank"
+      className="bg-gold text-white px-4 py-2 rounded-lg shadow-md hover:shadow-lg hover:opacity-90 transition text-sm md:text-base"
+    >
+      WhatsApp Us
+    </a>
+  </div>
+</nav>
       <section
         id="home"
         className="relative flex flex-col items-center justify-center text-center py-40 px-6 overflow-hidden"
@@ -38,7 +45,7 @@ export default function Home() {
             with compassion, precision, and trust.
           </p>
           <a
-            href="https://wa.me/60172740741"
+            href="https://wa.me/60122740741"
             target="_blank"
             className="bg-gold text-white px-8 py-4 rounded-full text-lg font-medium shadow-lg hover:shadow-xl hover:scale-105 transition"
           >
@@ -92,10 +99,10 @@ export default function Home() {
         <p className="mb-2">
           <span className="font-semibold text-gold">WhatsApp:</span>{" "}
           <a
-            href="https://wa.me/60172740741"
+  href="https://wa.me/60122740741"
             className="underline hover:text-gold"
           >
-            +6017 274 0741
+            +6012 274 0741
           </a>
         </p>
         <p>
