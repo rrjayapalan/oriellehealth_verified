@@ -6,7 +6,7 @@ export default function Home() {
          <img
            src="/logo.png"
            alt="Orielle Health Services Logo"
-           className="h-28 w-auto md:h-32"
+           className="h-44 w-auto md:h-56"
          />
         </div>
         <div className="space-x-8 text-teal font-medium">
