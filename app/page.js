@@ -44,7 +44,7 @@ export default function Home() {
         id="home"
         className="relative flex flex-col items-center justify-center text-center py-40 px-6 overflow-hidden"
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-turquoise via-white to-teal opacity-95" />
+        <div className="absolute inset-0 bg-gradient-to-br from-turquoise to-teal opacity-90" />
         <div className="relative z-10 max-w-3xl">
           <h1 className="text-5xl md:text-6xl font-serif text-white drop-shadow-md mb-6">
             Clinician-led on-site wound care, clinical and nursing care
