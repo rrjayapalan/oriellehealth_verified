@@ -1,36 +1,45 @@
 export default function Home() {
   return (
     <main className="min-h-screen flex flex-col font-sans">
+
+      {/* NAVIGATION BAR */}
       <nav className="sticky top-0 z-50 bg-white shadow-md">
-  <div className="flex flex-wrap items-center justify-between gap-3 px-4 py-3 md:px-8">
-    {/* Brand */}
-    <div className="text-lg md:text-2xl font-serif text-teal tracking-wide">
-      ORIELLE HEALTH SERVICES
-    </div>
+        <div className="flex flex-wrap items-center justify-between gap-3 px-4 py-3 md:px-8">
 
-    {/* Menu links */}
-    <div className="flex flex-wrap justify-center gap-3 md:gap-8 text-sm md:text-base text-teal font-medium">
-      <a href="#home" className="hover:text-gold">
-        Home
-      </a>
-      <a href="#services" className="hover:text-gold">
-        Services
-      </a>
-      <a href="#contact" className="hover:text-gold">
-        Contact
-      </a>
-    </div>
+          {/* Logo on the left */}
+          <div className="flex items-center">
+            <img
+              src="/logo.png"
+              alt="Orielle Health Services Logo"
+              className="h-10 md:h-12 w-auto"
+            />
+          </div>
 
-    {/* WhatsApp button */}
-    <a
-      href="https://wa.me/60122740741"
-      target="_blank"
-      className="bg-gold text-white px-4 py-2 rounded-lg shadow-md hover:shadow-lg hover:opacity-90 transition text-sm md:text-base"
-    >
-      WhatsApp Us
-    </a>
-  </div>
-</nav>
+          {/* Menu links */}
+          <div className="flex flex-wrap justify-center gap-3 md:gap-8 text-sm md:text-base text-teal font-medium">
+            <a href="#home" className="hover:text-gold">
+              Home
+            </a>
+            <a href="#services" className="hover:text-gold">
+              Services
+            </a>
+            <a href="#contact" className="hover:text-gold">
+              Contact
+            </a>
+          </div>
+
+          {/* WhatsApp button */}
+          <a
+            href="https://wa.me/60122740741"
+            target="_blank"
+            className="bg-gold text-white px-4 py-2 rounded-lg shadow-md hover:shadow-lg hover:opacity-90 transition text-sm md:text-base whitespace-nowrap"
+          >
+            WhatsApp Us
+          </a>
+        </div>
+      </nav>
+
+      {/* HERO / HOME SECTION */}
       <section
         id="home"
         className="relative flex flex-col items-center justify-center text-center py-40 px-6 overflow-hidden"
@@ -54,10 +63,13 @@ export default function Home() {
         </div>
       </section>
 
+      {/* SERVICES SECTION */}
       <section id="services" className="py-24 bg-ivory text-center">
         <h2 className="text-4xl font-serif mb-14 text-teal">Our Services</h2>
 
         <div className="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto px-6">
+          
+          {/* Card 1 */}
           <div className="bg-white rounded-2xl shadow-lg p-10 text-left hover:shadow-xl transition">
             <h3 className="text-2xl font-serif mb-6 text-gold border-b pb-2">
               Wound & Clinical Care Services
@@ -74,6 +86,7 @@ export default function Home() {
             </ul>
           </div>
 
+          {/* Card 2 */}
           <div className="bg-white rounded-2xl shadow-lg p-10 text-left hover:shadow-xl transition">
             <h3 className="text-2xl font-serif mb-6 text-gold border-b pb-2">
               Home Nursing Services
@@ -85,9 +98,11 @@ export default function Home() {
               <li>Tracheostomy wound dressing</li>
             </ul>
           </div>
+        
         </div>
       </section>
 
+      {/* CONTACT SECTION */}
       <section
         id="contact"
         className="py-20 text-center bg-gradient-to-br from-teal via-turquoise to-teal text-white"
@@ -99,7 +114,7 @@ export default function Home() {
         <p className="mb-2">
           <span className="font-semibold text-gold">WhatsApp:</span>{" "}
           <a
-  href="https://wa.me/60122740741"
+            href="https://wa.me/60122740741"
             className="underline hover:text-gold"
           >
             +6012 274 0741
@@ -111,11 +126,12 @@ export default function Home() {
             href="mailto:oriellehealthservices@gmail.com"
             className="underline hover:text-gold"
           >
-            oriellehealthservices@gmail.com
+            oriellehealthservices@gmail.com"
           </a>
         </p>
       </section>
 
+      {/* FOOTER */}
       <footer className="py-6 bg-white text-center text-sm text-teal border-t">
         © {new Date().getFullYear()} Orielle Health Services. All rights reserved.
       </footer>
