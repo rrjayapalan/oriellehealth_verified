@@ -2,12 +2,12 @@ export default function Home() {
   return (
     <main className="min-h-screen flex flex-col font-sans">
       <nav className="flex justify-between items-center px-8 py-4 bg-white shadow-md sticky top-0 z-50">
-        <div className="flex justify-center mb-6">
-         <img
-           src="/logo.png"
-           alt="Orielle Health Services Logo"
-           className="h-44 w-auto md:h-56"
-         />
+        <div className="flex justify-center items-center h-20 md:h-24 mb-4">
+          <img
+            src="/logo.png"
+            alt="Orielle Health Services Logo"
+            className="max-h-full w-auto"
+          />
         </div>
         <div className="space-x-8 text-teal font-medium">
           <a href="#home" className="hover:text-gold">Home</a>
