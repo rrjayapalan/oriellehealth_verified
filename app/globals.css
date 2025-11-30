@@ -7,57 +7,40 @@ body {
   background-color: #FDF8F3;
   color: #0D5C5C;
 }
-{/* HERO / HOME SECTION */}
-<section
-  id="home"
-  className="relative flex flex-col items-center justify-center text-center py-48 md:py-56 px-6 overflow-hidden bg-white"
->
-  {/* Light background (white with a very soft wash) */}
-  <div className="absolute inset-0 bg-gradient-to-b from-white via-[#f5fbfb] to-white" />
 
-  {/* Full-hero coloured watermark */}
-  <img
-    src="/logo-watermark.png"
-    alt="Orielle Health Services watermark"
-    className="hero-watermark"
-  />
+/* Orielle hero watermark swirl animation */
+.hero-watermark {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: min(90vw, 720px);      /* large across hero, responsive */
+  transform: translate(-50%, -50%);
+  opacity: 0.14;                /* coloured but subtle */
+  filter: drop-shadow(0 0 35px rgba(0, 0, 0, 0.18));
+  pointer-events: none;
+  user-select: none;
+  animation: orielleSwirl 45s ease-in-out infinite;
+}
 
-  {/* Content */}
-  <div className="relative z-10 max-w-3xl">
-    <h1 className="text-5xl md:text-6xl font-serif text-teal drop-shadow-sm mb-6">
-      Doctor-led home-based wound care & nursing
-    </h1>
-
-    <p className="text-lg md:text-xl text-teal/80 mb-12 leading-relaxed">
-      Personalised expert wound care and compassionate nursing support in the comfort and privacy of your home.
-    </p>
-
-    {/* BUTTONS */}
-    <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8">
-      
-      {/* Learn More – white, teal text, gold border, arrow */}
-      <a
-        href="#services"
-        className="w-60 text-center px-8 py-3 rounded-full text-lg font-medium 
-                   bg-white text-teal border-2 border-gold shadow-md 
-                   hover:bg-gold hover:text-white hover:shadow-lg 
-                   transition-all duration-300 flex items-center justify-center gap-2"
-      >
-        Learn More 
-        <span className="text-xl leading-none">↓</span>
-      </a>
-
-      {/* Book Appointment – primary CTA with subtle glow */}
-      <a
-        href="https://wa.me/60122740741"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="w-60 text-center px-8 py-4 rounded-full text-lg font-medium 
-                   bg-gold text-white shadow-lg hover:shadow-[0_0_20px_rgba(255,215,0,0.45)] 
-                   hover:scale-105 transition-all duration-300"
-      >
-        Book Appointment
-      </a>
-    </div>
-  </div>
-</section>
+@keyframes orielleSwirl {
+  0% {
+    transform: translate(-50%, -50%) scale(1) rotate(0deg);
+    opacity: 0.12;
+  }
+  25% {
+    transform: translate(-52%, -48%) scale(1.03) rotate(3deg);
+    opacity: 0.16;
+  }
+  50% {
+    transform: translate(-48%, -52%) scale(1.06) rotate(0deg);
+    opacity: 0.13;
+  }
+  75% {
+    transform: translate(-51%, -49%) scale(1.03) rotate(-3deg);
+    opacity: 0.15;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1) rotate(0deg);
+    opacity: 0.12;
+  }
+}
