@@ -53,13 +53,14 @@ export default function Home() {
     
   {/* Content */}
   <div className="relative z-10 max-w-3xl">
-    <h1 className="text-5xl md:text-6xl font-serif text-teal drop-shadow-sm mb-6">
-      Doctor-led home-based wound care & nursing
-    </h1>
+    <h1 className="text-5xl md:text-6xl font-serif text-slate-900 mb-6">
+  Doctor-led Home-Based Wound Care & Nursing Services
+</h1>
 
-    <p className="text-lg md:text-xl text-teal/80 mb-12 leading-relaxed">
-      Personalised expert wound care and compassionate nursing support in the comfort and privacy of your home.
-    </p>
+<p className="text-lg md:text-xl text-slate-700 mb-12 leading-relaxed">
+  Personalised expert wound care and compassionate nursing support in the comfort and privacy of your home.
+</p>
+
 
     {/* BUTTONS */}
     <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8">
