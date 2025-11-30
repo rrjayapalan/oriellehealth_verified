@@ -7,37 +7,29 @@ body {
   background-color: #FDF8F3;
   color: #0D5C5C;
 }
-/* Orielle hero watermark – large, static, glossy */
-.hero-watermark {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: min(180vw, 1500px);          /* even bigger */
-  aspect-ratio: 1 / 1;
-  background-image: url("/logo-watermark.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  opacity: 0.55;                      /* stronger colour */
-  filter:
-    drop-shadow(0 40px 120px rgba(0, 0, 0, 0.30))
-    saturate(1.55);                   /* rich teal + gold */
-  pointer-events: none;
-  user-select: none;
+/* HEADER ENHANCEMENTS */
+.header-enhanced {
+  background: linear-gradient(
+    to bottom,
+    rgba(240, 255, 255, 0.28),
+    rgba(255, 255, 255, 0.9)
+  );
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.6),
+    inset 0 -4px 12px rgba(0, 0, 0, 0.05),
+    0 2px 6px rgba(0,0,0,0.06);
+  position: relative;
 }
 
-/* Glossy highlight to add 3D shine */
-.hero-watermark::before {
+/* 1px teal gradient line below header */
+.header-enhanced::after {
   content: "";
   position: absolute;
-  inset: 12%;
-  border-radius: 50%;
-  background: radial-gradient(
-    circle at 25% 20%,
-    rgba(255, 255, 255, 0.75),
-    transparent 70%
-  );
-  mix-blend-mode: screen;
-  opacity: 0.85;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 1px;
+  background: linear-gradient(to right, #0d5c5c, #27a7a7, #0d5c5c);
+  opacity: 0.55;
+  pointer-events: none;
 }
