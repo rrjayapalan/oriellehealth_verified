@@ -3,10 +3,10 @@ export default function Home() {
     <main className="min-h-screen flex flex-col font-sans">
 
       {/* NAVIGATION BAR */}
-<nav className="sticky top-0 z-50 bg-white shadow-md">
+<nav className="sticky top-0 z-50 shadow-md bg-white header-enhanced">
   <div className="flex flex-wrap items-center justify-between gap-3 px-4 py-3 md:px-8">
 
-    {/* Logo on the left */}
+    {/* Logo */}
     <div className="flex items-center">
       <img
         src="/logo.png"
@@ -22,7 +22,7 @@ export default function Home() {
       <a href="#contact" className="hover:text-gold">Contact</a>
     </div>
 
-    {/* WhatsApp button */}
+    {/* WhatsApp */}
     <a
       href="https://wa.me/60122740741"
       target="_blank"
@@ -34,8 +34,6 @@ export default function Home() {
 
   </div>
 </nav>
-
-
       {/* HERO / HOME SECTION */}
       <section
         id="home"
