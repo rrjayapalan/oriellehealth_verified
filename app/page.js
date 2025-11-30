@@ -36,22 +36,27 @@ export default function Home() {
       </nav>
 
 {/* HERO / HOME SECTION */}
-<section id="home"
+<section
+  id="home"
   className="relative flex flex-col items-center justify-center text-center py-48 md:py-56 px-6 overflow-hidden bg-white"
 >
+
+  {/* High-res background image */}
   <div className="hero-bg"></div>
-  <div className="absolute inset-0 bg-white/10"></div>
+
+  {/* Soft white wash (optional — makes text readable) */}
+  <div className="absolute inset-0 bg-white/20"></div>
 
   <div className="relative z-10 max-w-3xl">
     <h1 className="text-5xl md:text-6xl font-serif text-slate-900 mb-6">
       Doctor-led Home-Based Wound Care & Nursing Services
     </h1>
+
     <p className="text-lg md:text-xl text-slate-700 mb-12 leading-relaxed">
       Personalised expert wound care and compassionate nursing support in
       the comfort and privacy of your home.
     </p>
 
-    {/* BUTTONS */}
     <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8">
 
       {/* Learn More */}
@@ -79,7 +84,6 @@ export default function Home() {
     </div>
   </div>
 </section>
-
 
       {/* SERVICES SECTION */}
       <section id="services" className="py-24 bg-ivory text-center">

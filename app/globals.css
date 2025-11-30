@@ -33,19 +33,14 @@ body {
   opacity: 0.55;
   pointer-events: none;
 }
-/* HERO BACKGROUND – clean, no blur */
+/* HERO BACKGROUND IMAGE */
 .hero-bg {
   position: absolute;
   inset: 0;
-  background-image: url('/hero-bandage.jpg'); /* must exist in /public */
+  background-image: url("/hero-bandage.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
-  /* keep it sharp, only slightly faded */
-  opacity: 0.35;
-  filter: none;            /* IMPORTANT: no blur, no brightness, no contrast */
-
-  pointer-events: none;
+  opacity: 0.35; /* adjust: 0.25–0.55 */
   z-index: 0;
 }
