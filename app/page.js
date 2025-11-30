@@ -47,11 +47,10 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-br from-turquoise to-teal opacity-90" />
         <div className="relative z-10 max-w-3xl">
           <h1 className="text-5xl md:text-6xl font-serif text-white drop-shadow-md mb-6">
-            Clinician-led on-site wound care, clinical and nursing care
+            Doctor-led home-based wound care & nursing
           </h1>
           <p className="text-lg md:text-xl text-white/90 mb-10 leading-relaxed">
-            Professional, evidence-based care brought directly to you — delivered
-            with compassion, precision, and trust.
+            Personalised expert wound care and compassionate nursing support in the comfort and privacy of your home.
           </p>
           <a
             href="https://wa.me/60122740741"
@@ -121,14 +120,15 @@ export default function Home() {
           </a>
         </p>
         <p>
-          <span className="font-semibold text-gold">Email:</span>{" "}
-          <a
-            href="mailto:oriellehealthservices@gmail.com"
-            className="underline hover:text-gold"
-          >
-            oriellehealthservices@gmail.com"
-          </a>
-        </p>
+  <span className="font-semibold text-gold">Email:</span>{" "}
+  <a
+    href="mailto:oriellehealthservices@gmail.com"
+    className="underline hover:text-gold"
+  >
+    oriellehealthservices@gmail.com
+  </a>
+</p>
+
       </section>
 
       {/* FOOTER */}
