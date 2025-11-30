@@ -3,7 +3,7 @@ export default function Home() {
     <main className="min-h-screen flex flex-col font-sans">
 
       {/* NAVIGATION BAR */}
-<nav className="sticky top-0 z-50 bg-gradient-to-r from-[#0D5C5C] via-[#1BA6A6] to-[#0D5C5C] shadow-md">
+<nav className="sticky top-0 z-50 bg-gradient-to-r from-teal-50 via-white to-teal-50 shadow-md">
   <div className="flex flex-wrap items-center justify-between gap-3 px-4 py-3 md:px-8">
 
     {/* Logo */}
@@ -26,12 +26,14 @@ export default function Home() {
     <a
       href="https://wa.me/60122740741"
       target="_blank"
+      rel="noopener noreferrer"
       className="bg-gold text-white px-4 py-2 rounded-lg shadow-md hover:shadow-lg hover:opacity-90 transition text-sm md:text-base whitespace-nowrap"
     >
       WhatsApp Us
     </a>
   </div>
 </nav>
+
       {/* HERO / HOME SECTION */}
       <section
         id="home"
