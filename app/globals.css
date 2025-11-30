@@ -33,15 +33,19 @@ body {
   opacity: 0.55;
   pointer-events: none;
 }
-/* Hero background image */
+/* Hero section background image */
 .hero-bg {
   position: absolute;
   inset: 0;
-  background-image: url('/hero-bg.jpg');
+  background-image: url('/hero-bandage.jpg');  /* make sure this file is in /public */
   background-size: cover;
   background-position: center;
-  opacity: 0.22;            /* soften */
-  filter: blur(2px) brightness(1.07);
+  background-repeat: no-repeat;
+
+  /* stronger, sharper look */
+  opacity: 0.55;                      /* was very low before */
+  filter: blur(0px) brightness(1.08) contrast(1.18);
+
   pointer-events: none;
   z-index: 0;
 }
