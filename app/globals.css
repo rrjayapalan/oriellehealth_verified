@@ -7,43 +7,67 @@ body {
   background-color: #FDF8F3;
   color: #0D5C5C;
 }
-
-/* Orielle hero watermark swirl animation */
+/* Orielle hero watermark – large, glossy, slow ripple */
 .hero-watermark {
   position: absolute;
   left: 50%;
   top: 50%;
-  width: min(130vw, 1100px);          /* larger – fills hero */
   transform: translate(-50%, -50%);
-  opacity: 0.22;                      /* more visible colour */
+  width: min(140vw, 1200px);          /* fills most of hero */
+  aspect-ratio: 1 / 1;
+  background-image: url("/logo-watermark.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  opacity: 0.24;                      /* visible but still watermark */
   filter:
-    blur(1px)
-    drop-shadow(0 0 45px rgba(0, 0, 0, 0.25)); /* more “lifted” */
+    drop-shadow(0 24px 60px rgba(0, 0, 0, 0.28))
+    saturate(1.1);
   pointer-events: none;
   user-select: none;
-  animation: orielleSwirl 28s ease-in-out infinite;
 }
 
-@keyframes orielleSwirl {
+/* Glossy highlight */
+.hero-watermark::before {
+  content: "";
+  position: absolute;
+  inset: 12%;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 30% 18%,
+    rgba(255, 255, 255, 0.75),
+    transparent 60%
+  );
+  mix-blend-mode: screen;
+  opacity: 0.9;                       /* gives a “shine” */
+}
+
+/* Water ripple ring */
+.hero-watermark::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.45);
+  transform-origin: center;
+  animation: orielleRipple 18s ease-out infinite;
+}
+
+@keyframes orielleRipple {
   0% {
-    transform: translate(-50%, -50%) scale(1) rotate(0deg);
-    opacity: 0.18;
+    transform: scale(0.9);
+    opacity: 0.45;
   }
-  25% {
-    transform: translate(-52%, -48%) scale(1.06) rotate(5deg);
-    opacity: 0.24;
+  40% {
+    transform: scale(1.08);
+    opacity: 0.25;
   }
-  50% {
-    transform: translate(-48%, -52%) scale(1.1) rotate(0deg);
-    opacity: 0.2;
-  }
-  75% {
-    transform: translate(-51%, -49%) scale(1.06) rotate(-5deg);
-    opacity: 0.23;
+  80% {
+    transform: scale(1.18);
+    opacity: 0;
   }
   100% {
-    transform: translate(-50%, -50%) scale(1) rotate(0deg);
-    opacity: 0.18;
+    transform: scale(1.2);
+    opacity: 0;
   }
 }
-
