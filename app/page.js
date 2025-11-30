@@ -32,6 +32,7 @@ export default function Home() {
           <a
             href="https://wa.me/60122740741"
             target="_blank"
+            rel="noopener noreferrer"            
             className="bg-gold text-white px-4 py-2 rounded-lg shadow-md hover:shadow-lg hover:opacity-90 transition text-sm md:text-base whitespace-nowrap"
           >
             WhatsApp Us
