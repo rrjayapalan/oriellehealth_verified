@@ -3,8 +3,8 @@ export default function Home() {
     <main className="min-h-screen flex flex-col font-sans">
 
       {/* NAVIGATION BAR */}
-<nav className="sticky top-0 z-50 shadow-md bg-white header-enhanced">
-  <div className="flex flex-wrap items-center justify-between gap-3 px-4 py-3 md:px-8">
+<nav className="sticky top-0 z-50 bg-white shadow-md">
+  <div className="header-enhanced flex flex-wrap items-center justify-between gap-3 px-4 py-3 md:px-8">
 
     {/* Logo */}
     <div className="flex items-center">
@@ -34,6 +34,7 @@ export default function Home() {
 
   </div>
 </nav>
+
       {/* HERO / HOME SECTION */}
       <section
         id="home"
