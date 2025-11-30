@@ -7,33 +7,10 @@ body {
   background-color: #FDF8F3;
   color: #0D5C5C;
 }
-/* HEADER ENHANCEMENTS */
-.header-enhanced {
-  background: linear-gradient(
-    to bottom,
-    rgba(240, 255, 255, 0.28),
-    rgba(255, 255, 255, 0.9)
-  );
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.6),
-    inset 0 -4px 12px rgba(0, 0, 0, 0.05),
-    0 2px 6px rgba(0,0,0,0.06);
-  position: relative;
-}
 
-/* 1px teal gradient line below header */
-.header-enhanced::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -1px;
-  height: 1px;
-  background: linear-gradient(to right, #0d5c5c, #27a7a7, #0d5c5c);
-  opacity: 0.55;
-  pointer-events: none;
-}
-/* HERO BACKGROUND – Desktop (slightly darker like before) */
+/* -----------------------------------------
+   HERO BACKGROUND (desktop)
+----------------------------------------- */
 .hero-bg {
   position: absolute;
   inset: 0;
@@ -41,39 +18,46 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.28;              /* darker than 0.42 */
-  filter: brightness(0.88) contrast(1.05);  
+
+  opacity: 0.68;
+  filter: brightness(0.92) contrast(1.15) saturate(1.05);
   z-index: 0;
-  pointer-events: none;
 }
 
-/* Gentle white overlay (less bright than earlier) */
+/* Light overlay */
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(255, 255, 255, 0.10);  /* used to be 0.35–0.55 */
+  background: rgba(255,255,255,0.10);
   z-index: 1;
 }
 
-/* Vignette – dialed way down for subtlety */
-.hero-vignette {
+/* Soft tint */
+.hero-tint {
   position: absolute;
   inset: 0;
-  background: radial-gradient(
-    ellipse at center,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.15) 60%,
-    rgba(255, 255, 255, 0.3) 100%
-  );
+  background: rgba(10,90,110,0.04);
+  mix-blend-mode: soft-light;
   z-index: 2;
-  pointer-events: none;
 }
 
-/* 📱 MOBILE VERSION (crop is correct — keep it) */
+/* Remove vignette */
+.hero-vignette {
+  display: none;
+}
+
+/* -----------------------------------------
+   🔽 MOBILE VERSION (insert this here)
+----------------------------------------- */
 @media (max-width: 768px) {
   .hero-bg {
-    background-position: center top; 
-    opacity: 0.40;                /* slightly brighter on mobile */
-    filter: brightness(0.95);     /* gentler than desktop */
+    background-size: contain;      /* show more of image */
+    background-position: center top;
+    opacity: 0.75;
+    filter: brightness(0.95) contrast(1.1);
+  }
+
+  .hero-overlay {
+    background: rgba(255,255,255,0.06);
   }
 }
