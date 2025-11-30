@@ -50,11 +50,11 @@ export default function Home() {
   {/* Content */}
   <div className="relative z-10 max-w-3xl">
     <h1 className="text-5xl md:text-6xl font-serif text-white drop-shadow-md mb-6">
-      Doctor-led home-based wound care & nursing
+      Doctor-led home-based wound care & nursing services
     </h1>
 
     <p className="text-lg md:text-xl text-white/90 mb-12 leading-relaxed">
-      Personalised expert wound care and compassionate nursing support in the comfort and privacy of your home.
+      Personalised expert wound care and nursing support in the comfort and privacy of your home.
     </p>
 
     {/* BUTTONS */}
