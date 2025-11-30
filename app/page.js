@@ -16,11 +16,14 @@ export default function Home() {
     </div>
 
     {/* Menu links */}
-    <div className="flex flex-wrap justify-center gap-3 md:gap-8 text-sm md:text-base text-teal font-medium">
-      <a href="#home" className="hover:text-gold">Home</a>
-      <a href="#services" className="hover:text-gold">Services</a>
-      <a href="#contact" className="hover:text-gold">Contact</a>
-    </div>
+    {/* Menu links */}
+<div className="flex flex-wrap justify-center gap-3 md:gap-8 text-sm md:text-base text-teal font-medium">
+  <a href="#home" className="hover:text-gold">Home</a>
+  <a href="#services" className="hover:text-gold">Services</a>
+  <a href="/about" className="hover:text-gold">About Us</a>
+  <a href="#contact" className="hover:text-gold">Contact</a>
+</div>
+
 
     {/* WhatsApp */}
     <a
@@ -63,9 +66,16 @@ export default function Home() {
                          hover:bg-gold hover:text-white hover:shadow-lg 
                          transition-all duration-300 flex items-center justify-center gap-2"
             >
-              Learn More
-              <span className="text-xl leading-none">↓</span>
-            </a>
+              <a
+  href="/about"
+  className="w-60 text-center px-8 py-3 rounded-full text-lg font-medium 
+             bg-white text-teal border-2 border-gold shadow-md 
+             hover:bg-gold hover:text-white hover:shadow-lg 
+             transition-all duration-300 flex items-center justify-center"
+>
+  Learn More
+</a>
+            
 
             {/* Book Appointment – primary CTA */}
             <a
@@ -90,7 +100,7 @@ export default function Home() {
           {/* Card 1 */}
           <div className="bg-white rounded-2xl shadow-lg p-10 text-left hover:shadow-xl transition">
             <h3 className="text-2xl font-serif mb-6 text-gold border-b pb-2">
-              Wound & Clinical Care Services
+              Wound Care Services
             </h3>
             <ul className="list-disc list-inside space-y-2 text-teal">
               <li>Professional wound care</li>
@@ -98,7 +108,7 @@ export default function Home() {
               <li>Modern dressing methods</li>
               <li>Wound debridement</li>
               <li>Post-operative wound care</li>
-              <li>Removal of sutures</li>
+              <li>Education for safer healing at home</li>
               <li>Nutritional consultation for wound healing</li>
               <li>Pressure injury prevention</li>
             </ul>
