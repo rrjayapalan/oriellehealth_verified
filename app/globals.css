@@ -33,3 +33,15 @@ body {
   opacity: 0.55;
   pointer-events: none;
 }
+/* Hero background image */
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url('/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.22;            /* soften */
+  filter: blur(2px) brightness(1.07);
+  pointer-events: none;
+  z-index: 0;
+}
