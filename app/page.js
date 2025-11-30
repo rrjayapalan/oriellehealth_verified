@@ -42,25 +42,32 @@ export default function Home() {
       {/* HERO / HOME SECTION */}
 <section
   id="home"
-  className="relative flex flex-col items-center justify-center text-center py-52 md:py-60 px-6 overflow-hidden"
+  className="relative flex flex-col items-center justify-center text-center py-48 md:py-56 px-6 overflow-hidden bg-white"
 >
-  {/* Background */}
-  <div className="absolute inset-0 bg-gradient-to-br from-turquoise to-teal opacity-90" />
+  {/* Light background (white with a very soft wash) */}
+  <div className="absolute inset-0 bg-gradient-to-b from-white via-[#f5fbfb] to-white" />
+
+  {/* Full-hero coloured watermark */}
+  <img
+    src="/logo-watermark.png"
+    alt="Orielle Health Services watermark"
+    className="hero-watermark"
+  />
 
   {/* Content */}
   <div className="relative z-10 max-w-3xl">
-    <h1 className="text-5xl md:text-6xl font-serif text-white drop-shadow-md mb-6">
-      Doctor-led home-based wound care & nursing services
+    <h1 className="text-5xl md:text-6xl font-serif text-teal drop-shadow-sm mb-6">
+      Doctor-led home-based wound care & nursing
     </h1>
 
-    <p className="text-lg md:text-xl text-white/90 mb-12 leading-relaxed">
-      Personalised expert wound care and nursing support in the comfort and privacy of your home.
+    <p className="text-lg md:text-xl text-teal/80 mb-12 leading-relaxed">
+      Personalised expert wound care and compassionate nursing support in the comfort and privacy of your home.
     </p>
 
     {/* BUTTONS */}
     <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8">
       
-      {/* Learn More button – white, teal text, gold border, downward icon */}
+      {/* Learn More – white, teal text, gold border, arrow */}
       <a
         href="#services"
         className="w-60 text-center px-8 py-3 rounded-full text-lg font-medium 
@@ -72,7 +79,7 @@ export default function Home() {
         <span className="text-xl leading-none">↓</span>
       </a>
 
-      {/* Book Appointment – gold CTA with subtle glow */}
+      {/* Book Appointment – primary CTA with subtle glow */}
       <a
         href="https://wa.me/60122740741"
         target="_blank"
@@ -86,6 +93,7 @@ export default function Home() {
     </div>
   </div>
 </section>
+
 
       {/* SERVICES SECTION */}
       <section id="services" className="py-24 bg-ivory text-center">
@@ -145,15 +153,14 @@ export default function Home() {
           </a>
         </p>
         <p>
-  <span className="font-semibold text-gold">Email:</span>{" "}
-  <a
-    href="mailto:oriellehealthservices@gmail.com"
-    className="underline hover:text-gold"
-  >
-    oriellehealthservices@gmail.com
-  </a>
-</p>
-
+          <span className="font-semibold text-gold">Email:</span>{" "}
+          <a
+            href="mailto:oriellehealthservices@gmail.com"
+            className="underline hover:text-gold"
+          >
+            oriellehealthservices@gmail.com"
+          </a>
+        </p>
       </section>
 
       {/* FOOTER */}
