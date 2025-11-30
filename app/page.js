@@ -47,7 +47,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-br from-turquoise to-teal opacity-90" />
         <div className="relative z-10 max-w-3xl">
           <h1 className="text-5xl md:text-6xl font-serif text-white drop-shadow-md mb-6">
-            Doctor-led home-based wound care & nursing
+            Doctor-led home-based wound care & home nursing
           </h1>
           <p className="text-lg md:text-xl text-white/90 mb-10 leading-relaxed">
             Personalised expert wound care and compassionate nursing support in the comfort and privacy of your home.
