@@ -42,33 +42,44 @@ export default function Home() {
       {/* HERO / HOME SECTION */}
 <section
   id="home"
-  className="relative flex flex-col items-center justify-center text-center py-[340px] md:py-[420px] px-6 overflow-hidden"
+  className="relative flex flex-col items-center justify-center text-center py-52 md:py-60 px-6 overflow-hidden"
 >
+  {/* Background */}
   <div className="absolute inset-0 bg-gradient-to-br from-turquoise to-teal opacity-90" />
 
+  {/* Content */}
   <div className="relative z-10 max-w-3xl">
     <h1 className="text-5xl md:text-6xl font-serif text-white drop-shadow-md mb-6">
       Doctor-led home-based wound care & nursing
     </h1>
 
-    <p className="text-lg md:text-xl text-white/90 mb-10 leading-relaxed">
+    <p className="text-lg md:text-xl text-white/90 mb-12 leading-relaxed">
       Personalised expert wound care and compassionate nursing support in the comfort and privacy of your home.
     </p>
 
     {/* BUTTONS */}
-    <div className="flex flex-col md:flex-row items-center justify-center gap-4">
+    <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8">
+      
+      {/* Learn More button – white, teal text, gold border, downward icon */}
       <a
         href="#services"
-        className="bg-white/20 text-white px-8 py-3 rounded-full text-lg font-medium shadow-md hover:bg-white/30 transition border border-white/40"
+        className="w-60 text-center px-8 py-3 rounded-full text-lg font-medium 
+                   bg-white text-teal border-2 border-gold shadow-md 
+                   hover:bg-gold hover:text-white hover:shadow-lg 
+                   transition-all duration-300 flex items-center justify-center gap-2"
       >
-        Learn More
+        Learn More 
+        <span className="text-xl leading-none">↓</span>
       </a>
 
+      {/* Book Appointment – gold CTA with subtle glow */}
       <a
         href="https://wa.me/60122740741"
         target="_blank"
         rel="noopener noreferrer"
-        className="bg-gold text-white px-8 py-4 rounded-full text-lg font-medium shadow-lg hover:shadow-xl hover:scale-105 transition"
+        className="w-60 text-center px-8 py-4 rounded-full text-lg font-medium 
+                   bg-gold text-white shadow-lg hover:shadow-[0_0_20px_rgba(255,215,0,0.45)] 
+                   hover:scale-105 transition-all duration-300"
       >
         Book Appointment
       </a>
