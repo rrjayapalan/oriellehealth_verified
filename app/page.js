@@ -3,10 +3,10 @@ export default function Home() {
     <main className="min-h-screen flex flex-col font-sans">
 
       {/* NAVIGATION BAR */}
-<nav className="sticky top-0 z-50 bg-gradient-to-r from-teal-50 via-white to-teal-50 shadow-md">
+<nav className="sticky top-0 z-50 bg-white shadow-md">
   <div className="flex flex-wrap items-center justify-between gap-3 px-4 py-3 md:px-8">
 
-    {/* Logo */}
+    {/* Logo on the left */}
     <div className="flex items-center">
       <img
         src="/logo.png"
@@ -15,8 +15,8 @@ export default function Home() {
       />
     </div>
 
-    {/* Menu */}
-    <div className="flex flex-wrap justify-center gap-3 md:gap-8 text-sm md:text-base text-black font-medium">
+    {/* Menu links */}
+    <div className="flex flex-wrap justify-center gap-3 md:gap-8 text-sm md:text-base text-teal font-medium">
       <a href="#home" className="hover:text-gold">Home</a>
       <a href="#services" className="hover:text-gold">Services</a>
       <a href="#contact" className="hover:text-gold">Contact</a>
@@ -31,8 +31,10 @@ export default function Home() {
     >
       WhatsApp Us
     </a>
+
   </div>
 </nav>
+
 
       {/* HERO / HOME SECTION */}
       <section
