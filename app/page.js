@@ -38,44 +38,44 @@ export default function Home() {
 {/* HERO / HOME SECTION */}
 <section
   id="home"
-  className="relative flex flex-col items-center justify-center text-center py-48 md:py-56 px-6 overflow-hidden bg-white"
+  className="relative flex flex-col items-center justify-center text-center 
+             py-40 md:py-52 px-6 overflow-hidden bg-white"
 >
+  {/* Background image + overlays */}
+  <div className="hero-bg" />
+  <div className="hero-overlay" />
+  <div className="hero-vignette" />
 
-  {/* High-res background image */}
-  <div className="hero-bg"></div>
-
-  {/* Soft white wash (optional — makes text readable) */}
-  <div className="absolute inset-0 bg-white/20"></div>
-
+  {/* Content */}
   <div className="relative z-10 max-w-3xl">
-    <h1 className="text-5xl md:text-6xl font-serif text-slate-900 mb-6">
-      Doctor-led Home-Based Wound Care & Nursing Services
+    <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-slate-900 mb-6 leading-tight">
+      Doctor-led Home-Based Wound Care &amp; Nursing Services
     </h1>
 
-    <p className="text-lg md:text-xl text-slate-700 mb-12 leading-relaxed">
+    <p className="text-base md:text-lg lg:text-xl text-slate-700 mb-10 md:mb-12 leading-relaxed">
       Personalised expert wound care and compassionate nursing support in
       the comfort and privacy of your home.
     </p>
 
-    <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8">
-
-      {/* Learn More */}
+    {/* CTA buttons */}
+    <div className="flex flex-col md:flex-row items-center justify-center gap-5 md:gap-7">
+      {/* Learn More → About page */}
       <a
         href="/about"
-        className="w-60 text-center px-8 py-3 rounded-full text-lg font-medium 
+        className="w-56 md:w-60 text-center px-8 py-3 rounded-full text-base md:text-lg font-medium 
                    bg-white text-teal border-2 border-gold shadow-md 
                    hover:bg-gold hover:text-white hover:shadow-lg 
-                   transition-all duration-300 flex items-center justify-center"
+                   transition-all duration-300"
       >
         Learn More
       </a>
 
-      {/* Book Appointment */}
+      {/* Book Appointment → WhatsApp */}
       <a
         href="https://wa.me/60122740741"
         target="_blank"
         rel="noopener noreferrer"
-        className="w-60 text-center px-8 py-4 rounded-full text-lg font-medium 
+        className="w-56 md:w-60 text-center px-8 py-3 md:py-4 rounded-full text-base md:text-lg font-medium 
                    bg-gold text-white shadow-lg hover:shadow-[0_0_20px_rgba(255,215,0,0.45)] 
                    hover:scale-105 transition-all duration-300"
       >
@@ -84,6 +84,7 @@ export default function Home() {
     </div>
   </div>
 </section>
+
 
       {/* SERVICES SECTION */}
       <section id="services" className="py-24 bg-ivory text-center">
