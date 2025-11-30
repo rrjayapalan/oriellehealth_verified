@@ -20,7 +20,7 @@ export default function Home() {
 <a href="#services" className="hover:text-gold">Services</a>
 <a href="#contact" className="hover:text-gold">Contact</a>
 
-            </a>
+   
           </div>
 
           {/* WhatsApp button */}
