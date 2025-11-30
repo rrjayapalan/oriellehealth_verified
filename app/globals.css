@@ -33,53 +33,47 @@ body {
   opacity: 0.55;
   pointer-events: none;
 }
-/* HERO BACKGROUND – desktop default */
+/* HERO BACKGROUND – Desktop (slightly darker like before) */
 .hero-bg {
   position: absolute;
   inset: 0;
-  background-image: url("/hero-bandage.png"); /* 2048×2048 */
+  background-image: url("/hero-bandage.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.42;        /* 0.35–0.5 range, adjust to taste */
-  filter: none;
+  opacity: 0.32;              /* darker than 0.42 */
+  filter: brightness(0.88) contrast(1.05);  
   z-index: 0;
   pointer-events: none;
 }
 
-/* Soft white overlay for readability */
+/* Gentle white overlay (less bright than earlier) */
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0.35),
-    rgba(255, 255, 255, 0.55)
-  );
+  background: rgba(255, 255, 255, 0.15);  /* used to be 0.35–0.55 */
   z-index: 1;
 }
 
-/* White vignette – fades the edges so centre text pops */
+/* Vignette – dialed way down for subtlety */
 .hero-vignette {
   position: absolute;
   inset: 0;
   background: radial-gradient(
     ellipse at center,
     rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.3) 55%,
-    rgba(255, 255, 255, 0.7) 100%
+    rgba(255, 255, 255, 0.15) 60%,
+    rgba(255, 255, 255, 0.4) 100%
   );
   z-index: 2;
   pointer-events: none;
 }
 
-/* MOBILE-OPTIMISED CROP
-   If you create a tighter version (e.g. hero-bandage-mobile.png),
-   this will swap it in on small screens. */
+/* 📱 MOBILE VERSION (crop is correct — keep it) */
 @media (max-width: 768px) {
   .hero-bg {
-    background-image: url("/hero-bandage-mobile.png"); /* optional */
-    background-position: center top;
-    opacity: 0.45; /* slightly stronger on small screens */
+    background-position: center top; 
+    opacity: 0.40;                /* slightly brighter on mobile */
+    filter: brightness(0.95);     /* gentler than desktop */
   }
 }
