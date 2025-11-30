@@ -1,42 +1,45 @@
 export default function Home() {
   return (
     <main className="min-h-screen flex flex-col font-sans">
-
       {/* NAVIGATION BAR */}
-<nav className="sticky top-0 z-50 bg-white shadow-md">
-  <div className="header-enhanced flex flex-wrap items-center justify-between gap-3 px-4 py-3 md:px-8">
+      <nav className="sticky top-0 z-50 bg-white shadow-md">
+        <div className="header-enhanced flex flex-wrap items-center justify-between gap-3 px-4 py-3 md:px-8">
+          {/* Logo */}
+          <div className="flex items-center">
+            <img
+              src="/logo.png"
+              alt="Orielle Health Services Logo"
+              className="h-12 md:h-14 w-auto"
+            />
+          </div>
 
-    {/* Logo */}
-    <div className="flex items-center">
-      <img
-        src="/logo.png"
-        alt="Orielle Health Services Logo"
-        className="h-12 md:h-14 w-auto"
-      />
-    </div>
+          {/* Menu links */}
+          <div className="flex flex-wrap justify-center gap-3 md:gap-8 text-sm md:text-base text-teal font-medium">
+            <a href="#home" className="hover:text-gold">
+              Home
+            </a>
+            <a href="#services" className="hover:text-gold">
+              Services
+            </a>
+            <a href="/about" className="hover:text-gold">
+              About Us
+            </a>
+            <a href="#contact" className="hover:text-gold">
+              Contact
+            </a>
+          </div>
 
-    {/* Menu links */}
-    {/* Menu links */}
-<div className="flex flex-wrap justify-center gap-3 md:gap-8 text-sm md:text-base text-teal font-medium">
-  <a href="#home" className="hover:text-gold">Home</a>
-  <a href="#services" className="hover:text-gold">Services</a>
-  <a href="/about" className="hover:text-gold">About Us</a>
-  <a href="#contact" className="hover:text-gold">Contact</a>
-</div>
-
-
-    {/* WhatsApp */}
-    <a
-      href="https://wa.me/60122740741"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="bg-gold text-white px-4 py-2 rounded-lg shadow-md hover:shadow-lg hover:opacity-90 transition text-sm md:text-base whitespace-nowrap"
-    >
-      WhatsApp Us
-    </a>
-
-  </div>
-</nav>
+          {/* WhatsApp button */}
+          <a
+            href="https://wa.me/60122740741"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-gold text-white px-4 py-2 rounded-lg shadow-md hover:shadow-lg hover:opacity-90 transition text-sm md:text-base whitespace-nowrap"
+          >
+            WhatsApp Us
+          </a>
+        </div>
+      </nav>
 
       {/* HERO / HOME SECTION */}
       <section
@@ -49,33 +52,26 @@ export default function Home() {
         {/* Content */}
         <div className="relative z-10 max-w-3xl">
           <h1 className="text-5xl md:text-6xl font-serif text-slate-900 mb-6">
-            Doctor-led Home-Based Wound Care & Nursing Services
+            Doctor-led home-based wound care & nursing services
           </h1>
 
           <p className="text-lg md:text-xl text-slate-700 mb-12 leading-relaxed">
-            Personalised expert wound care and compassionate nursing support in the comfort and privacy of your home.
+            Personalised expert wound care and compassionate nursing support in
+            the comfort and privacy of your home.
           </p>
 
           {/* BUTTONS */}
           <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8">
-            {/* Learn More – white, teal text, gold border, arrow */}
+            {/* Learn More – goes to About page */}
             <a
-              href="#services"
+              href="/about"
               className="w-60 text-center px-8 py-3 rounded-full text-lg font-medium 
                          bg-white text-teal border-2 border-gold shadow-md 
                          hover:bg-gold hover:text-white hover:shadow-lg 
-                         transition-all duration-300 flex items-center justify-center gap-2"
+                         transition-all duration-300 flex items-center justify-center"
             >
-              <a
-  href="/about"
-  className="w-60 text-center px-8 py-3 rounded-full text-lg font-medium 
-             bg-white text-teal border-2 border-gold shadow-md 
-             hover:bg-gold hover:text-white hover:shadow-lg 
-             transition-all duration-300 flex items-center justify-center"
->
-  Learn More
-</a>
-            
+              Learn More
+            </a>
 
             {/* Book Appointment – primary CTA */}
             <a
@@ -100,7 +96,7 @@ export default function Home() {
           {/* Card 1 */}
           <div className="bg-white rounded-2xl shadow-lg p-10 text-left hover:shadow-xl transition">
             <h3 className="text-2xl font-serif mb-6 text-gold border-b pb-2">
-              Wound Care Services
+              Wound & Clinical Care Services
             </h3>
             <ul className="list-disc list-inside space-y-2 text-teal">
               <li>Professional wound care</li>
@@ -108,7 +104,7 @@ export default function Home() {
               <li>Modern dressing methods</li>
               <li>Wound debridement</li>
               <li>Post-operative wound care</li>
-              <li>Education for safer healing at home</li>
+              <li>Removal of sutures</li>
               <li>Nutritional consultation for wound healing</li>
               <li>Pressure injury prevention</li>
             </ul>
@@ -160,7 +156,8 @@ export default function Home() {
 
       {/* FOOTER */}
       <footer className="py-6 bg-white text-center text-sm text-teal border-t">
-        © {new Date().getFullYear()} Orielle Health Services. All rights reserved.
+        © {new Date().getFullYear()} Orielle Health Services. All rights
+        reserved.
       </footer>
     </main>
   );
