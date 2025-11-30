@@ -15,17 +15,11 @@ export default function Home() {
 
           {/* Menu links */}
           <div className="flex flex-wrap justify-center gap-3 md:gap-8 text-sm md:text-base text-teal font-medium">
-            <a href="#home" className="hover:text-gold">
-              Home
-            </a>
-            <a href="#services" className="hover:text-gold">
-              Services
-            </a>
-            <a href="/about" className="hover:text-gold">
-              About Us
-            </a>
-            <a href="#contact" className="hover:text-gold">
-              Contact
+            <a href="#home" className="hover:text-gold">Home</a>
+<a href="/about" className="hover:text-gold">About Us</a>
+<a href="#services" className="hover:text-gold">Services</a>
+<a href="#contact" className="hover:text-gold">Contact</a>
+
             </a>
           </div>
 
@@ -52,7 +46,7 @@ export default function Home() {
         {/* Content */}
         <div className="relative z-10 max-w-3xl">
           <h1 className="text-5xl md:text-6xl font-serif text-slate-900 mb-6">
-            Doctor-led home-based wound care & nursing services
+            Doctor-led Home-Based Wound Care & Nursing Services
           </h1>
 
           <p className="text-lg md:text-xl text-slate-700 mb-12 leading-relaxed">
