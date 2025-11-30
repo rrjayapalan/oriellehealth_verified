@@ -3,42 +3,37 @@ export default function Home() {
     <main className="min-h-screen flex flex-col font-sans">
 
       {/* NAVIGATION BAR */}
-      <nav className="sticky top-0 z-50 bg-white shadow-md">
-        <div className="flex flex-wrap items-center justify-between gap-3 px-4 py-3 md:px-8">
+      <nav className="sticky top-0 z-50 bg-gradient-to-r from-teal/15 via-turquoise/10 to-teal/15 backdrop-blur-md shadow-md">
+  <div className="flex flex-wrap items-center justify-between gap-3 px-4 py-3 md:px-8">
 
-          {/* Logo on the left */}
-          <div className="flex items-center">
-            <img
-              src="/logo.png"
-              alt="Orielle Health Services Logo"
-              className="h-12 md:h-14 w-auto"
-            />
-          </div>
+    {/* Logo */}
+    <div className="flex items-center">
+      <img
+        src="/logo.png"
+        alt="Orielle Health Services Logo"
+        className="h-12 md:h-14 w-auto"
+      />
+    </div>
 
-          {/* Menu links */}
-          <div className="flex flex-wrap justify-center gap-3 md:gap-8 text-sm md:text-base text-teal font-medium">
-            <a href="#home" className="hover:text-gold">
-              Home
-            </a>
-            <a href="#services" className="hover:text-gold">
-              Services
-            </a>
-            <a href="#contact" className="hover:text-gold">
-              Contact
-            </a>
-          </div>
+    {/* Menu */}
+    <div className="flex flex-wrap justify-center gap-3 md:gap-8 text-sm md:text-base text-black font-medium">
+      <a href="#home" className="hover:text-gold">Home</a>
+      <a href="#services" className="hover:text-gold">Services</a>
+      <a href="#contact" className="hover:text-gold">Contact</a>
+    </div>
 
-          {/* WhatsApp button */}
-          <a
-            href="https://wa.me/60122740741"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-gold text-white px-4 py-2 rounded-lg shadow-md hover:shadow-lg hover:opacity-90 transition text-sm md:text-base whitespace-nowrap"
-          >
-            WhatsApp Us
-          </a>
-        </div>
-      </nav>
+    {/* WhatsApp Button */}
+    <a
+      href="https://wa.me/60122740741"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-gold text-white px-4 py-2 rounded-lg shadow-md hover:shadow-lg hover:opacity-90 transition text-sm md:text-base whitespace-nowrap"
+    >
+      WhatsApp Us
+    </a>
+
+  </div>
+</nav>
 
       {/* HERO / HOME SECTION */}
       <section
