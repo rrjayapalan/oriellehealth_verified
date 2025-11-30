@@ -37,14 +37,13 @@ body {
 .hero-bg {
   position: absolute;
   inset: 0;
-  background-image: url('/hero-bandage.jpg');  /* make sure this file is in /public */
+  background-image: url('/hero-bandage.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
-  /* stronger, sharper look */
-  opacity: 0.55;                      /* was very low before */
-  filter: blur(0px) brightness(1.08) contrast(1.18);
+  opacity: 0.32; /* softer but sharp */
+  filter: none; /* remove blur/contrast effects */
 
   pointer-events: none;
   z-index: 0;

@@ -40,7 +40,7 @@ export default function Home() {
   className="relative flex flex-col items-center justify-center text-center py-48 md:py-56 px-6 overflow-hidden bg-white"
 >
   <div className="hero-bg"></div>
-  <div className="absolute inset-0 bg-white/25"></div>
+  <div className="absolute inset-0 bg-white/10"></div>
 
   <div className="relative z-10 max-w-3xl">
     <h1 className="text-5xl md:text-6xl font-serif text-slate-900 mb-6">
