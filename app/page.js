@@ -48,12 +48,8 @@ export default function Home() {
   <div className="absolute inset-0 bg-gradient-to-b from-white via-[#f5fbfb] to-white" />
 
   {/* Full-hero coloured watermark */}
-  <img
-    src="/logo-watermark.png"
-    alt="Orielle Health Services watermark"
-    className="hero-watermark"
-  />
-
+  <div className="hero-watermark" />
+    
   {/* Content */}
   <div className="relative z-10 max-w-3xl">
     <h1 className="text-5xl md:text-6xl font-serif text-teal drop-shadow-sm mb-6">
