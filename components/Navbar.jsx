@@ -4,6 +4,7 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 bg-white shadow-md">
       <div className="header-enhanced flex flex-wrap items-center justify-between gap-3 px-4 py-3 md:px-8">
+        
         {/* Logo → Home */}
         <Link href="/" className="flex items-center">
           <img
@@ -13,23 +14,17 @@ export default function Navbar() {
           />
         </Link>
 
-        {/* Menu */}
+        {/* Menu links */}
         <div className="flex flex-wrap justify-center gap-3 md:gap-8 text-sm md:text-base text-teal font-medium">
-          {/* Home always routes to "/" */}
           <Link href="/" className="hover:text-gold">Home</Link>
-
-          {/* Separate pages */}
           <Link href="/about" className="hover:text-gold">About Us</Link>
-          <Link href="/gallery" className="hover:text-gold">Gallery</Link>
-          <Link href="/faq" className="hover:text-gold">FAQ</Link>
 
-          {/* Homepage sections (anchors). Works from any page. */}
+          {/* Homepage sections — NOTE the /# prefix */}
           <a href="/#services" className="hover:text-gold">Services</a>
-          <a href="/#how-it-works" className="hover:text-gold">How it works</a>
           <a href="/#contact" className="hover:text-gold">Contact</a>
         </div>
 
-        {/* WhatsApp CTA */}
+        {/* WhatsApp button */}
         <a
           href="https://wa.me/60122740741"
           target="_blank"
