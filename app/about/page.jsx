@@ -3,16 +3,17 @@ export default function AboutPage() {
     <main className="min-h-screen bg-white text-teal">
 
       {/* HERO */}
-      <section className="py-24 text-center bg-gradient-to-b from-white via-[#f5fbfb] to-white px-6">
-        <h1 className="text-4xl md:text-5xl font-serif text-teal mb-6">
-          <h1 className="text-4xl font-serif mb-6 text-teal">
-  About Orielle Health Services
-</h1>
+<section className="py-24 text-center bg-gradient-to-b from-white via-[#f5fbfb] to-white px-6">
+  <h1 className="text-4xl md:text-5xl font-serif text-teal mb-6">
+    About Orielle Health Services
+  </h1>
 
-<p className="max-w-3xl mx-auto text-lg md:text-xl text-teal/80 leading-relaxed">
-  Doctor-led home-based wound care and nursing services in Malaysia, providing safe, personalised, and evidence-based care in the comfort of your home.
-</p>
-      </section>
+  <p className="max-w-3xl mx-auto text-lg md:text-xl text-teal/80 leading-relaxed">
+    Doctor-led home-based wound care and nursing services in Malaysia, providing safe,
+    personalised, and evidence-based care in the comfort of your home.
+  </p>
+</section>
+
 
       {/* MISSION & VISION */}
       <section className="py-20 bg-ivory px-6">
@@ -104,7 +105,6 @@ Our promise is simple: clinical excellence, delivered with heart.
             <div className="p-10 bg-ivory rounded-2xl shadow-md">
               <h3 className="text-xl font-serif text-gold mb-4">Safety</h3>
               <p className="text-teal/80">
-                Safety
 Every decision we make is guided by one priority — your safety. From meticulous technique to thoughtful follow-up, your well-being comes first, always.
 
               </p>
