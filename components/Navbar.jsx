@@ -3,36 +3,40 @@ import Link from "next/link";
 export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 bg-white shadow-md">
-      <div className="header-enhanced flex flex-wrap items-center justify-between gap-3 px-4 py-3 md:px-8">
-        
-        {/* Logo → Home */}
-        <Link href="/" className="flex items-center">
-          <img
-            src="/logo.png"
-            alt="Orielle Health Services Logo"
-            className="h-12 md:h-14 w-auto"
-          />
-        </Link>
+      {/* Constrained container */}
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="flex items-center h-20">
 
-        {/* Menu links */}
-        <div className="flex flex-wrap justify-center gap-3 md:gap-8 text-sm md:text-base text-teal font-medium">
-          <Link href="/" className="hover:text-gold">Home</Link>
-          <Link href="/about" className="hover:text-gold">About Us</Link>
+          {/* LOGO (hard constrained) */}
+          <Link href="/" className="flex items-center flex-shrink-0">
+            <img
+              src="/logo.png"
+              alt="Orielle Health Services Logo"
+              className="h-12 w-auto"
+            />
+          </Link>
 
-          {/* Homepage sections — NOTE the /# prefix */}
-          <a href="/#services" className="hover:text-gold">Services</a>
-          <a href="/#contact" className="hover:text-gold">Contact</a>
+          {/* MENU (true centre lane) */}
+          <div className="flex-1 flex justify-center gap-8 text-sm md:text-base text-teal font-medium">
+            <Link href="/" className="hover:text-gold">Home</Link>
+            <Link href="/about" className="hover:text-gold">About Us</Link>
+            <a href="/#services" className="hover:text-gold">Services</a>
+            <a href="/#how-it-works" className="hover:text-gold">How it works</a>
+            <Link href="/faq" className="hover:text-gold">FAQ</Link>
+            <a href="/#contact" className="hover:text-gold">Contact</a>
+          </div>
+
+          {/* CTA (right, non-shrinking) */}
+          <a
+            href="https://wa.me/60122740741"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-shrink-0 bg-gold text-white px-4 py-2 rounded-lg shadow-md hover:shadow-lg hover:opacity-90 transition text-sm md:text-base"
+          >
+            WhatsApp Us
+          </a>
+
         </div>
-
-        {/* WhatsApp button */}
-        <a
-          href="https://wa.me/60122740741"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-gold text-white px-4 py-2 rounded-lg shadow-md hover:shadow-lg hover:opacity-90 transition text-sm md:text-base whitespace-nowrap"
-        >
-          WhatsApp Us
-        </a>
       </div>
     </nav>
   );
