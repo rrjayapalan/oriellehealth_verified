@@ -10,8 +10,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="bg-ivory text-teal">
-        <Navbar />
-        {children}
+        <main className="min-h-screen flex flex-col font-sans">
+          <Navbar />
+          {children}
+        </main>
       </body>
     </html>
   );
