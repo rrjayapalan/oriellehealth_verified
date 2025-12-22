@@ -86,42 +86,47 @@ export default function Home() {
 </section>
 
 
-      {/* SERVICES SECTION */}
-      <section id="services" className="py-24 bg-ivory text-center">
-        <h2 className="text-4xl font-serif mb-14 text-teal">Our Services</h2>
+    {/* SERVICES SECTION */}
+<section id="services" className="py-24 bg-ivory text-center">
+  <h2 className="text-4xl font-serif mb-14 text-teal">Our Services</h2>
 
-        <div className="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto px-6">
-          {/* Card 1 */}
-          <div className="bg-white rounded-2xl shadow-lg p-10 text-left hover:shadow-xl transition">
-            <h3 className="text-2xl font-serif mb-6 text-gold border-b pb-2">
-              Wound & Clinical Care Services
-            </h3>
-            <ul className="list-disc list-inside space-y-2 text-teal">
-              <li>Professional wound care</li>
-              <li>Complex wound management</li>
-              <li>Modern dressing methods</li>
-              <li>Wound debridement</li>
-              <li>Post-operative wound care</li>
-              <li>Removal of sutures</li>
-              <li>Nutritional consultation for wound healing</li>
-              <li>Pressure injury prevention</li>
-            </ul>
-          </div>
+  <div className="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto px-6">
+    {/* Card 1 */}
+    <div className="bg-white rounded-2xl shadow-lg p-10 text-left hover:shadow-xl transition">
+      <h3 className="text-2xl font-serif mb-2 text-gold border-b pb-2">
+        Wound &amp; Clinical Care Services
+      </h3>
+      <p className="mt-4 mb-4 text-sm md:text-base text-slate-700 font-medium">
+        Wound Care Services
+      </p>
+      <ul className="list-disc list-inside space-y-2 text-teal">
+        <li>Professional wound assessment and management</li>
+        <li>Advanced care for chronic and complex wounds</li>
+        <li>Modern, evidence-based dressing techniques</li>
+        <li>Wound debridement (as clinically indicated)</li>
+        <li>Post-operative wound care and monitoring</li>
+        <li>Suture removal</li>
+        <li>Nutritional guidance to support wound healing</li>
+        <li>Prevention and management of pressure injuries</li>
+        <li>Education for safe wound healing at home</li>
+      </ul>
+    </div>
 
-          {/* Card 2 */}
-          <div className="bg-white rounded-2xl shadow-lg p-10 text-left hover:shadow-xl transition">
-            <h3 className="text-2xl font-serif mb-6 text-gold border-b pb-2">
-              Home Nursing Services
-            </h3>
-            <ul className="list-disc list-inside space-y-2 text-teal">
-              <li>Urinary catheter exchange</li>
-              <li>Change of urine bag</li>
-              <li>Feeding / nasogastric tube exchange</li>
-              <li>Tracheostomy wound dressing</li>
-            </ul>
-          </div>
-        </div>
-      </section>
+    {/* Card 2 */}
+    <div className="bg-white rounded-2xl shadow-lg p-10 text-left hover:shadow-xl transition">
+      <h3 className="text-2xl font-serif mb-6 text-gold border-b pb-2">
+        Home Nursing Services
+      </h3>
+      <ul className="list-disc list-inside space-y-2 text-teal">
+        <li>Urinary catheter care and replacement</li>
+        <li>Urine bag change and hygiene care</li>
+        <li>Enteral feeding tube (nasogastric) care and replacement</li>
+        <li>Tracheostomy wound care and dressing</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
 
       {/* CONTACT SECTION */}
       <section
