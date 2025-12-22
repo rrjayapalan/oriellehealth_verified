@@ -1,15 +1,18 @@
 import "./globals.css";
+import Navbar from "../components/Navbar";
 
 export const metadata = {
   title: "Orielle Health Services",
-  description:
-    "Clinician-led on-site wound care, clinical and nursing care."
+  description: "Clinician-led on-site wound care, clinical and nursing care.",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="bg-ivory text-teal">{children}</body>
+      <body className="bg-ivory text-teal">
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }

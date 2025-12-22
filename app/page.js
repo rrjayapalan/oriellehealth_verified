@@ -1,39 +1,6 @@
 export default function Home() {
   return (
     <main className="min-h-screen flex flex-col font-sans">
-      {/* NAVIGATION BAR */}
-      <nav className="sticky top-0 z-50 bg-white shadow-md">
-        <div className="header-enhanced flex flex-wrap items-center justify-between gap-3 px-4 py-3 md:px-8">
-          {/* Logo */}
-          <div className="flex items-center">
-            <img
-              src="/logo.png"
-              alt="Orielle Health Services Logo"
-              className="h-12 md:h-14 w-auto"
-            />
-          </div>
-
-          {/* Menu links */}
-          <div className="flex flex-wrap justify-center gap-3 md:gap-8 text-sm md:text-base text-teal font-medium">
-            <a href="#home" className="hover:text-gold">Home</a>
-<a href="/about" className="hover:text-gold">About Us</a>
-<a href="#services" className="hover:text-gold">Services</a>
-<a href="#contact" className="hover:text-gold">Contact</a>
-
-   
-          </div>
-
-          {/* WhatsApp button */}
-          <a
-            href="https://wa.me/60122740741"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-gold text-white px-4 py-2 rounded-lg shadow-md hover:shadow-lg hover:opacity-90 transition text-sm md:text-base whitespace-nowrap"
-          >
-            WhatsApp Us
-          </a>
-        </div>
-      </nav>
 
 {/* HERO / HOME SECTION */}
 <section
@@ -94,7 +61,7 @@ export default function Home() {
     {/* Card 1 */}
     <div className="bg-white rounded-2xl shadow-lg p-10 text-left hover:shadow-xl transition">
       <h3 className="text-2xl font-serif mb-2 text-gold border-b pb-2">
-        Wound &amp; Clinical Care Services
+        Wound Care Services
       </h3>
       <p className="mt-4 mb-4 text-sm md:text-base text-slate-700 font-medium">
         Wound Care Services
@@ -102,11 +69,10 @@ export default function Home() {
       <ul className="list-disc list-inside space-y-2 text-teal">
         <li>Professional wound assessment and management</li>
         <li>Advanced care for chronic and complex wounds</li>
-        <li>Modern, evidence-based dressing techniques</li>
-        <li>Wound debridement (as clinically indicated)</li>
-        <li>Post-operative wound care and monitoring</li>
-        <li>Suture removal</li>
-        <li>Nutritional guidance to support wound healing</li>
+        <li>Modern dressing techniques</li>
+        <li>Wound debridement</li>
+        <li>Post-operative wound care</li>
+        <li>Nutritional guidance for wound healing</li>
         <li>Prevention and management of pressure injuries</li>
         <li>Education for safe wound healing at home</li>
       </ul>
@@ -123,6 +89,27 @@ export default function Home() {
         <li>Enteral feeding tube (nasogastric) care and replacement</li>
         <li>Tracheostomy wound care and dressing</li>
       </ul>
+    </div>
+  </div>
+</section>
+
+<section id="how-it-works" className="py-24 bg-white text-center px-6">
+  <h2 className="text-4xl font-serif mb-14 text-teal">How It Works</h2>
+
+  <div className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+    <div className="bg-ivory rounded-2xl shadow-md p-8">
+      <h3 className="text-lg font-semibold text-teal mb-2">1. Contact / Book</h3>
+      <p className="text-teal/80">Reach us via WhatsApp or phone to arrange an appointment.</p>
+    </div>
+
+    <div className="bg-ivory rounded-2xl shadow-md p-8">
+      <h3 className="text-lg font-semibold text-teal mb-2">2. Home Assessment</h3>
+      <p className="text-teal/80">A structured clinical assessment is performed at your home.</p>
+    </div>
+
+    <div className="bg-ivory rounded-2xl shadow-md p-8">
+      <h3 className="text-lg font-semibold text-teal mb-2">3. Care Plan &amp; Follow-Up</h3>
+      <p className="text-teal/80">Personalised plan, dressings, education, and follow-up.</p>
     </div>
   </div>
 </section>
