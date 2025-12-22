@@ -5,10 +5,13 @@ export default function AboutPage() {
       {/* HERO */}
       <section className="py-24 text-center bg-gradient-to-b from-white via-[#f5fbfb] to-white px-6">
         <h1 className="text-4xl md:text-5xl font-serif text-teal mb-6">
-          About Orielle Health Services
-        </h1>
-        <p className="max-w-3xl mx-auto text-lg md:text-xl text-teal/80 leading-relaxed">
-          Doctor-led home-based wound care and nursing services in Malaysia, providing safe, personalised, and evidence-based care in the comfort of your home.
+          <h1 className="text-4xl font-serif mb-6 text-teal">
+  About Orielle Health Services
+</h1>
+
+<p className="max-w-3xl mx-auto text-lg md:text-xl text-teal/80 leading-relaxed">
+  Doctor-led home-based wound care and nursing services in Malaysia, providing safe, personalised, and evidence-based care in the comfort of your home.
+</p>
       </section>
 
       {/* MISSION & VISION */}
